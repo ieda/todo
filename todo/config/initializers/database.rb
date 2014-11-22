@@ -1,3 +1,3 @@
 require "yaml"
-settings = YAML::load_file("config/db.yml")
+Mongoid.load!("config/db.yml", ENV['RACK_ENV'])
 # MongoDB Configuration
