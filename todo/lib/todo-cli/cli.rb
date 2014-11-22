@@ -1,7 +1,7 @@
 module Todo
   class Cli
     def add(message)
-      return true;
+      return !!Task.create(message)
     end
   end
 end
